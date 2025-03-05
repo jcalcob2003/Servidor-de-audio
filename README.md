@@ -14,9 +14,9 @@
    ```
    Modifica las siguientes secciones:
    ```xml
-   <source-password>alumno</source-password>
-   <admin-user>alumno</admin-user>
-   <admin-password>alumno</admin-password>
+   <source-password>javi</source-password>
+   <admin-user>javi</admin-user>
+   <admin-password>javi</admin-password>
    ```
    - **`<source-password>`**: Contraseña que el software fuente (Ices2) debe proporcionar para autenticarse con el servidor Icecast.
    - **`<admin-user>`** y **`<admin-password>`**: Credenciales para acceder a la interfaz de administración web de Icecast.
@@ -56,13 +56,13 @@
    ```
    Modifica las siguientes secciones:
    ```xml
-   <name>La radio trampa</name>
-   <genre>Jazz-Pop</genre>
-   <description>Recordando a Supertramp</description>
+   <name>Javi</name>
+   <genre>Pop</genre>
+   <description>Javi</description>
    <param name="type">basic</param>
    <param name="file">/home/vagrant/canciones/lista.txt</param>
    <password>alumno</password>
-   <mount>/supertramp</mount>
+   <mount>/audios</mount>
    ```
    - **`<name>`**, **`<genre>`**, **`<description>`**: Metadatos descriptivos de la estación de radio.
    - **`<param name="type">basic</param>`**: Indica que la lista de reproducción se proporcionará a través de un archivo.
@@ -83,8 +83,6 @@
      sudo apt install ffmpeg
      ffmpeg -i archivo1.mp3 -acodec libvorbis archivo1.ogg
      ffmpeg -i archivo2.mp3 -acodec libvorbis archivo2.ogg
-     ffmpeg -i archivo3.mp3 -acodec libvorbis archivo3.ogg
-     ffmpeg -i archivo4.mp3 -acodec libvorbis archivo4.ogg
      ```
 
 3. **Copiar archivos a la máquina virtual**:
@@ -92,8 +90,6 @@
      ```bash
      cp /vagrant/archivo1.ogg /home/vagrant/canciones/
      cp /vagrant/archivo2.ogg /home/vagrant/canciones/
-     cp /vagrant/archivo3.ogg /home/vagrant/canciones/
-     cp /vagrant/archivo4.ogg /home/vagrant/canciones/
      ```
 
 4. **Generar la lista de reproducción**:
@@ -140,13 +136,13 @@
 
 ---
 
-## **Prueba del Servidor de Streaming** 🎧
+## **Prueba del Servidor de Streaming**
 
 1. **Acceder a la interfaz web de Icecast**:
    - En tu máquina real, abre un navegador web y accede a `http://localhost:8000`.
-   - Haz clic en "Administration" e ingresa con las credenciales (`alumno` / `alumno`).
+   - Haz clic en "Administration" e ingresa con las credenciales (`javi` / `javi`).
 
 2. **Reproducir la lista de reproducción**:
-   - Usa **VLC Media Player** y abre la URL `http://localhost:8000/supertramp` para reproducir la lista de reproducción.
+   - Usa **VLC Media Player** y abre la URL `http://localhost:8000/audios` para reproducir la lista de reproducción.
 
 ---
