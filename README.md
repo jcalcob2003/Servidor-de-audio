@@ -61,7 +61,7 @@
    <description>Javi</description>
    <param name="type">basic</param>
    <param name="file">/home/vagrant/canciones/lista.txt</param>
-   <password>alumno</password>
+   <password>javi</password>
    <mount>/audios</mount>
    ```
    - **`<name>`**, **`<genre>`**, **`<description>`**: Metadatos descriptivos de la estación de radio.
