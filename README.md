@@ -1,4 +1,4 @@
-## **Instalación y Configuración Manual de Icecast2** 🎛️
+## **Instalación y Configuración Manual de Icecast2**
 
 1. **Instalar Icecast2**:
    ```bash
@@ -34,7 +34,7 @@
 
 ---
 
-## **Instalación y Configuración Manual de Ices2** 🎚️
+## **Instalación y Configuración Manual de Ices2**
 
 1. **Instalar Ices2 y Vorbis Tools**:
    ```bash
@@ -72,10 +72,10 @@
 
 ---
 
-## **Preparación Manual de Archivos de Audio** 🎶
+## **Preparación Manual de Archivos de Audio**
 
 1. **Descargar archivos de audio**:
-   - Descarga archivos `.mp3` desde fuentes legales como [Archive.org](https://archive.org/details/audio) o [Freesound](https://freesound.org/).
+   - Descarga archivos `.mp3`.
 
 2. **Convertir archivos a formato `.ogg`**:
    - Convierte los archivos `.mp3` a `.ogg` usando `ffmpeg`:
@@ -100,7 +100,7 @@
 
 ---
 
-## **Automatización Manual del Servicio Ices2** 🤖
+## **Automatización Manual del Servicio Ices2** 
 
 1. **Crear un servicio systemd para Ices2**:
    Crea un archivo de servicio:
